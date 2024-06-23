@@ -89,10 +89,15 @@ class BreadboardDemo(app.App):
     def _init_pin_values(self):
         # eGPIO pins
         self.pins["ls_1"] = self.hexpansion_config.ls_pin[0]
+        self.pins["ls_1"].init(self.pins["ls_1"].OUT)
         self.pins["ls_2"] = self.hexpansion_config.ls_pin[1]
+        self.pins["ls_2"].init(self.pins["ls_2"].OUT)
         self.pins["ls_3"] = self.hexpansion_config.ls_pin[2]
+        self.pins["ls_3"].init(self.pins["ls_3"].OUT)
         self.pins["ls_4"] = self.hexpansion_config.ls_pin[3]
+        self.pins["ls_4"].init(self.pins["ls_4"].OUT)
         self.pins["ls_5"] = self.hexpansion_config.ls_pin[4]
+        self.pins["ls_5"].init(self.pins["ls_5"].OUT)
         # GPIO pins
         self.pins["hs_1"] = self.hexpansion_config.pin[0]
         self.pins["hs_1"].init(self.pins["hs_1"].OUT)
