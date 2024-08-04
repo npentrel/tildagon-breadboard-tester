@@ -37,4 +37,4 @@ description = "Use only with breadboard hexpansions. Toggle the state of eGPIO a
 # increased, we interpret this as a new version being released.
 #
 # Version number must be an integer!
-version = "0.0.1"
+version = "0.0.2"
